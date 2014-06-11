@@ -2,6 +2,6 @@
 
 Note: may have to download a recent version of ffmpeg!
   
-  ffmpeg -y -i $input_file -c:v libx264 -ab 128 -b 1200 $output_file 
+  !ffmpeg -y -i $input_file -c:v libx264 -b:a 128k -b:v 1200k $output_file 
 
-(-y: overwrite, -ab: audio bitrate, -b: video bitrate, kB/s)
+(-y: overwrite)
