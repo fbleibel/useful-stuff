@@ -16,4 +16,18 @@ See: https://trac.ffmpeg.org/wiki/Encode/H.264
 
     !ffmpeg -i $i -vf deshake $o
     or deshake=rx=64:ry=64 (maximum extent of movement)
- 
+    or deshake=edge=blank
+    
+    ‘blank, 0’
+    Fill zeroes at blank locations
+    
+    ‘original, 1’
+    Original image at blank locations
+    
+    ‘clamp, 2’
+    Extruded edge value at blank locations
+    
+    ‘mirror, 3’
+    Mirrored edge at blank locations
+    
+    Default value is ‘mirror’.
