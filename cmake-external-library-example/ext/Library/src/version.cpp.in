@@ -1,0 +1,8 @@
+#include <library/api.h>
+
+static const char* VERSION = "${LIBRARY_VERSION}";
+
+using namespace std;
+namespace Library {
+    string library_version() { return VERSION; }
+}
