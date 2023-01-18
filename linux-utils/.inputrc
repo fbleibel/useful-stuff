@@ -1,0 +1,18 @@
+## arrow up
+"\e[A":history-search-backward
+## arrow down
+"\e[B":history-search-forward
+## Single tab completion
+set show-all-if-ambiguous on
+# ctrl + left/right to move between words
+"\e[1;5D":backward-word
+"\e[1;5C":forward-word
+# ctrl+backspace to remove previous word
+"\C-h": backward-kill-word
+
+# ctrl+delete to remove next word
+"\e[3;5~": kill-word
+
+
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
